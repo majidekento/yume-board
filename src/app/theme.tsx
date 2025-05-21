@@ -1,23 +1,25 @@
 'use client';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { colors } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ReactNode } from 'react';
 
 // テーマの設定をカスタマイズできます
 const theme = createTheme({
   palette: {
+    mode: 'dark',
     primary: {
-      main: '#556cd6',
+      main: colors.blue[500],
     },
     secondary: {
-      main: '#19857b',
+      main: colors.green[500],
     },
     error: {
-      main: '#f44336',
+      main: colors.red[500],
     },
     background: {
-      default: '#fff',
+      default: '#000',
     },
   },
 });
